@@ -1,8 +1,15 @@
-# Chatterbox TTS Server: OpenAI-Compatible API with Web UI, Large Text Handling & Built-in Voices
+# Chatterbox TTS Server (TR fork): OpenAI-Compatible API with Web UI, Large Text Handling & Built-in Voices
 
 **Self-host the powerful [Chatterbox TTS model](https://github.com/resemble-ai/chatterbox) with this enhanced FastAPI server! Features an intuitive Web UI, a flexible API endpoint, voice cloning, large text processing via intelligent chunking, and consistent, reproducible voices using built-in ready-to-use voices and a generation seed feature.**
 
-This server is based on the architecture and UI of our [Dia-TTS-Server](https://github.com/devnen/Dia-TTS-Server) project but uses the distinct `chatterbox-tts` engine. Runs accelerated on NVIDIA GPUs (CUDA) with CPU fallback.
+> What is Chatterbox? It is Resemble AI's open-source text-to-speech model focused on high-quality, single-speaker synthesis with voice cloning support. Learn more in the original repo: [resemble-ai/chatterbox](https://github.com/resemble-ai/chatterbox).
+
+> Repo lineage: This repository is a fork of [devnen/Chatterbox-TTS-Server](https://github.com/devnen/Chatterbox-TTS-Server), which in turn builds on the UI patterns from [Dia-TTS-Server](https://github.com/devnen/Dia-TTS-Server).
+
+### Fork-specific changes (this repo)
+- Web UI updated to surface both **English** and **Turkish (TR)** language options prominently.
+- Maintains all upstream features (chunking, cloning, predefined voices, seed control, Docker support, etc.).
+- README updated to reflect the fork origin and bilingual UI focus.
 
 [![Project Link](https://img.shields.io/badge/GitHub-devnen/Chatterbox--TTS--Server-blue?style=for-the-badge&logo=github)](https://github.com/devnen/Chatterbox-TTS-Server)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
@@ -134,8 +141,12 @@ Follow these steps carefully to get the server running.
 
 **1. Clone the Repository**
 ```bash
-git clone https://github.com/devnen/chatterbox-tts-server.git
-cd chatterbox-tts-server
+# Clone this fork (Turkish/English UI)
+git clone https://github.com/<your-username>/Chatterbox-TR-Api.git
+cd Chatterbox-TR-Api
+
+# Upstream reference (original codebase)
+# git clone https://github.com/devnen/Chatterbox-TTS-Server.git
 ```
 
 **2. Set up Python Virtual Environment**
